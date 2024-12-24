@@ -4,7 +4,7 @@ const AboutMeSection = () => {
   return (
     <div className=" bg-white border border-gray-300 rounded-lg shadow-md">
       <div className="text-lg w-full p-4 bg-[#F4F7EC] flex items-center justify-between">
-        <h2 className="text-lg font-semibold text-gray-800">
+        <h2 className="text-lg text-gray-800">
           A Little About me
         </h2>
         <button className="flex items-center px-3 py-1 text-sm border-2 border-[#3A643B]  rounded-lg">

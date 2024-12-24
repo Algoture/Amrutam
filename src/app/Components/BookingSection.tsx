@@ -78,15 +78,15 @@ const BookingSection: React.FC = () => {
 
       <div className="mt-4">
         <p className="text-gray-500 text-sm">Pick a time slot</p>
-        <div className="flex space-x-2 overflow-x-auto mt-2">
+        <div className="flex w-full justify-evenly gap-2 mt-2">
           {dates.map((date) => (
             <button
               key={date.day}
               onClick={() => handleDateChange(date.day)}
-              className={`px-4 py-2 rounded text-center font-medium text-sm ${
+              className={`flex flex-col cursor-pointer border-[#3A643B]  px-4 py-2 rounded border border-opacity-50 text-center font-medium text-sm ${
                 selectedDate === date.day
-                  ? "bg-green-100 text-green-600"
-                  : "bg-white border border-gray-300 text-gray-700"
+                  ? "bg-[#F2FBF2] border border-[#3A643B] "
+                  : "text-green-600"
               }`}
             >
               <div>{date.day.split(",")[0]}</div>
@@ -104,7 +104,7 @@ const BookingSection: React.FC = () => {
               onClick={() => handleSlotChange(slot)}
               className={`px-3 py-2 text-sm rounded border text-center font-medium ${
                 selectedSlot === slot
-                  ? "bg-green-600 text-white"
+                  ? "bg-act text-white"
                   : "border-green-600 text-green-600"
               }`}
             >
@@ -115,7 +115,7 @@ const BookingSection: React.FC = () => {
       </div>
 
       <button
-        className="w-full mt-6 px-4 py-2 bg-green-600 text-white rounded text-center font-medium"
+        className="w-full mt-6 px-4 py-2 bg-act text-white rounded text-center font-medium"
         disabled={!selectedSlot}
       >
         Make an Appointment
