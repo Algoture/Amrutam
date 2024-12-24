@@ -32,3 +32,12 @@ body {
 .bo{
   @apply border border-red-500
 }
+.feeDiv{
+  @apply cen flex-col border p-2 border-[#3A643B] border-opacity-40 rounded-lg;
+}
+.fee{
+  @apply text-sm font-bold text-[#3A643B];
+}
+.cardtxt{
+  @apply text-base gap-1 flex items-start text-[#646665];
+}
