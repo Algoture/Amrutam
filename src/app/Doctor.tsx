@@ -1,6 +1,6 @@
 import React from "react";
-import Nav from "./Nav";
-import Profile from "./Profile";
+import Nav from "./Components/Nav";
+import Profile from "./Components/Profile";
 
 const DoctorProfile: React.FC = () => {
   return (

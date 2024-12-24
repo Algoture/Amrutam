@@ -1,7 +1,7 @@
 import React from "react";
-import SearchBar from "./SearchBar";
-import Filters from "./Filters";
-import DoctorList from "./DoctorList";
+import SearchBar from "./Components/SearchBar";
+import Filters from "./Components/Filters";
+import DoctorList from "./Components/DoctorList";
 
 const MainPage: React.FC = () => {
   return (
