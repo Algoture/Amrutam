@@ -1,4 +1,5 @@
 import React from "react";
+import { CloseIcon } from "./Icons";
 
 const Filters: React.FC = () => {
   const filters = ["Hair care", "Female", "₹0-₹500", "Hindi"];
@@ -22,14 +23,17 @@ const Filters: React.FC = () => {
           <option>All Filters</option>
         </select>
       </div>
-      {/* {filters.map((filter, index) => (
-        <span
-          key={index}
-          className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm"
-        >
-          {filter}
-        </span>
-      ))} */}
+      <div className="flex gap-3 my-2 w-full justify-end">
+        {filters.map((filter, index) => (
+          <span
+            key={index}
+            className="bg-[#EAF2EA] cen px-3 py-2 gap-2 float-end rounded-full text-sm"
+          >
+            {filter}
+            <CloseIcon height={15} width={15} />
+          </span>
+        ))}
+      </div>
     </div>
   );
 };
