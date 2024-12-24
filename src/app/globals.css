@@ -17,5 +17,18 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Helvetica, sans-serif;
+}
+
+.amrut {
+  letter-spacing: 0.5rem;
+}
+.navtxt {
+  @apply text-navtext hover:underline;
+}
+.cen {
+  @apply flex items-center justify-center;
+}
+.bo{
+  @apply border border-red-500
 }

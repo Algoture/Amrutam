@@ -11,6 +11,10 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        act:"#3A643B",
+        fl:"#FFFBF2",
+        cardsBg:"#FFF7E2",
+        navtext:"#474747",
       },
     },
   },
