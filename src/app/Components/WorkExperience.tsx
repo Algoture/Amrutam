@@ -15,9 +15,11 @@ const WorkExperience: React.FC = () => {
   ];
 
   return (
-    <div className="p-6 bg-white shadow-lg rounded-lg">
-      <h3 className="text-lg font-bold text-gray-700">My Work Experience</h3>
-      <ul className="mt-4 space-y-2">
+    <div className=" bg-white shadow-lg rounded-lg">
+      <div className="text-lg w-full p-4 bg-[#F4F7EC] flex items-center justify-between">
+        <h3 className="text-lg  text-gray-700">My Work Experience</h3>
+      </div>
+      <ul className="mt-4 p-4 space-y-2">
         {experiences.map((exp, index) => (
           <li key={index} className="flex justify-between">
             <span>
