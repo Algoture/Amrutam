@@ -20,7 +20,7 @@ const Profile = () => {
               <h3 className="font-bold text-xl text-gray-900">
                 Dr. Bruce Willis
               </h3>
-              <img src="/tick.png" alt="" className="size-5" />
+              <img src="/Tick.png" alt="" className="size-5" />
             </div>
             <p className="text-base text-act">Gynecologist</p>
             <div className="cen sm:justify-start gap-1 mt-1">
