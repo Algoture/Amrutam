@@ -10,7 +10,7 @@ import TreatmentConcerns from "./Components/TreatmentConcerns";
 
 const DoctorProfile: React.FC = () => {
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <div className="bg-gray-50 min-h-screen mb-2">
       <Navbar />
       <div className="max-w-6xl mx-auto mt-6 space-y-6">
         <Profile />

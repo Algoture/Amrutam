@@ -39,13 +39,13 @@ const BookingSection: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-100 p-6 rounded-lg shadow-lg max-w-md mx-auto">
+    <div className="p-6 rounded-lg border border-[#E8E8E8] h-fit max-w-md mx-auto">
       <div className="border border-[#E2E2E2] rounded-xl flex justify-between p-2">
         <h3 className="text-lg font-bold text-gray-700">Appointment Fee</h3>
         <p className="text-xl font-semibold text-act">₹699.00</p>
       </div>
       <div className="mt-4">
-        <p className="text-gray-500 text-sm">Select your mode of session</p>
+        <p className="my-4 text-sm font-bold">Select your mode of session</p>
         <div className="flex w-full justify-evenly gap-2 mt-2">
           {[
             { label: "In-Clinic", value: "In-Clinic", time: "45 Mins" },
@@ -55,20 +55,21 @@ const BookingSection: React.FC = () => {
             <div
               key={mode.value}
               onClick={() => handleModeChange(mode.value)}
-              className={`flex flex-col cursor-pointer border-[#3A643B]  px-4 py-2 rounded border border-opacity-50 text-center font-medium text-sm ${
+              className={`flex flex-col cursor-pointer border-[#3A643B]  px-4 py-2 rounded-xl border border-opacity-50 text-center font-medium text-sm ${
                 selectedMode === mode.value
                   ? "bg-[#F2FBF2] border border-[#3A643B] "
                   : "text-green-600"
               }`}
             >
               <p
-                className={`{${
+                className={`cen gap-1 text-nowrap {${
                   selectedMode === mode.value
                     ? "text-[#3A643B]"
                     : "border-[#E5E5E5] text-[#1F1F1F]"
                 }`}
               >
-                {mode.label}
+                {mode.label}{" "}
+                {selectedMode === mode.value && <img src="/done.png" className="size-4" />}
               </p>
               <p className="text-[#606060]">{mode.time}</p>
             </div>
@@ -77,21 +78,27 @@ const BookingSection: React.FC = () => {
       </div>
 
       <div className="mt-4">
-        <p className="text-gray-500 text-sm">Pick a time slot</p>
+        <p className="font-bold text-sm">Pick a time slot</p>
         <div className="flex w-full justify-evenly gap-2 mt-2">
           {dates.map((date) => (
             <button
               key={date.day}
               onClick={() => handleDateChange(date.day)}
-              className={`flex flex-col cursor-pointer border-[#3A643B]  px-4 py-2 rounded border border-opacity-50 text-center font-medium text-sm ${
+              className={`cen flex-col text-nowrap cursor-pointer border-[#3A643B] w-fit  p-3 rounded-xl border border-opacity-50 text-center font-medium text-sm ${
                 selectedDate === date.day
-                  ? "bg-[#F2FBF2] border border-[#3A643B] "
-                  : "text-green-600"
+                  ? "bg-[#F2FBF2] border text-act border-[#3A643B] "
+                  : ""
               }`}
             >
-              <div>{date.day.split(",")[0]}</div>
+              <div>{date.day}</div>
               <div className="text-xs font-normal">
-                {date.slots} slot{date.slots > 1 ? "s" : ""}
+                <span
+                  className={`${date.slots <= 2 ? "text-red-500" : ""} ${
+                    date.slots == 5 ? "text-[#F1B93A]" : ""
+                  }`}
+                >
+                  {date.slots} slot{date.slots > 1 ? "s" : ""}
+                </span>
               </div>
             </button>
           ))}
@@ -102,10 +109,10 @@ const BookingSection: React.FC = () => {
             <button
               key={slot}
               onClick={() => handleSlotChange(slot)}
-              className={`px-3 py-2 text-sm rounded border text-center font-medium ${
+              className={`px-2 py-4 text-sm rounded-2xl border text-center font-medium ${
                 selectedSlot === slot
                   ? "bg-act text-white"
-                  : "border-green-600 text-green-600"
+                  : "border-[#EBEBEB] "
               }`}
             >
               {slot}
@@ -115,7 +122,9 @@ const BookingSection: React.FC = () => {
       </div>
 
       <button
-        className={`w-full mt-6 px-4 py-2 bg-act text-white rounded text-center font-medium ${selectedSlot?"cursor-pointer":"cursor-not-allowed"}`}
+        className={`w-full mt-6 px-4 py-2 bg-act text-white rounded text-center font-medium ${
+          selectedSlot ? "cursor-pointer" : "cursor-not-allowed"
+        }`}
         disabled={!selectedSlot}
       >
         Make an Appointment

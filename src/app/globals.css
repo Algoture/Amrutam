@@ -24,7 +24,7 @@ body {
   letter-spacing: 0.5rem;
 }
 .navtxt {
-  @apply text-navtext hover:underline;
+  @apply  text-lg hover:underline;
 }
 .cen {
   @apply flex items-center justify-center;
