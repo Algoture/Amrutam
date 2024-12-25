@@ -6,6 +6,7 @@ import Specializations from "./Components/Specializations";
 import WorkExperience from "./Components/WorkExperience";
 import Reviews from "./Components/Reviews";
 import AboutMeSection from "./Components/AboutMeSection";
+import TreatmentConcerns from "./Components/TreatmentConcerns";
 
 const DoctorProfile: React.FC = () => {
   return (
@@ -17,6 +18,7 @@ const DoctorProfile: React.FC = () => {
           <div className="lg:col-span-2 space-y-4">
             <AboutMeSection />
             <Specializations />
+            <TreatmentConcerns />
             <WorkExperience />
             <Reviews />
           </div>
