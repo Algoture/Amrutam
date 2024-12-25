@@ -29,15 +29,18 @@ body {
 .cen {
   @apply flex items-center justify-center;
 }
-.bo{
-  @apply border border-red-500
+.bo {
+  @apply border border-red-500;
 }
-.feeDiv{
+.feeDiv {
   @apply cen flex-col border p-2 border-[#3A643B] border-opacity-40 rounded-lg;
 }
-.fee{
+.fee {
   @apply text-sm font-bold text-[#3A643B];
 }
-.cardtxt{
+.cardtxt {
   @apply text-base gap-1 flex items-start text-[#646665];
+}
+.socialDiv {
+  @apply bg-[#F7F7FC] size-10 border-[0.3px] rounded-full border-[#8E8E8E] cen;
 }

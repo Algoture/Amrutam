@@ -1,12 +1,11 @@
 import React from "react";
+import { FbIcon, InstaIcon, XIcon, YtIcon } from "./Icons";
 
 const AboutMeSection = () => {
   return (
     <div className=" bg-white border border-gray-300 rounded-lg shadow-md">
       <div className="text-lg w-full p-4 bg-[#F4F7EC] flex items-center justify-between">
-        <h2 className="text-lg text-gray-800">
-          A Little About me
-        </h2>
+        <h2 className="text-lg text-gray-800">A Little About me</h2>
         <button className="flex items-center px-3 py-1 text-sm border-2 border-[#3A643B]  rounded-lg">
           Follow +
         </button>
@@ -38,18 +37,18 @@ const AboutMeSection = () => {
           </div>
         </div>
       </div>
-      <div className="mt-4 flex space-x-4">
-        <a href="#" className="text-gray-500 hover:text-gray-800">
-          {/* <i className="fab fa-facebook"></i> */}
+      <div className="m-4 flex space-x-4">
+        <a href="#" className="socialDiv">
+          <FbIcon width={25} height={25} />
         </a>
-        <a href="#" className="text-gray-500 hover:text-gray-800">
-          {/* <i className="fab fa-instagram"></i> */}
+        <a href="#" className="socialDiv">
+          <InstaIcon width={25} height={25} />
         </a>
-        <a href="#" className="text-gray-500 hover:text-gray-800">
-          {/* <i className="fab fa-youtube"></i> */}
+        <a href="#" className="socialDiv">
+          <YtIcon width={25} height={25} />
         </a>
-        <a href="#" className="text-gray-500 hover:text-gray-800">
-          {/* <i className="fab fa-twitter"></i> */}
+        <a href="#" className="socialDiv">
+          <XIcon width={25} height={25} />
         </a>
       </div>
     </div>
