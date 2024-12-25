@@ -1,7 +1,12 @@
 import React from "react";
 
 const Specializations: React.FC = () => {
-  const specialties = ["Women's Health", "Skin Care", "Immunity", "Hair Care"];
+  const specialties = [
+    { name: "Women's Health", img: "women.png" },
+    { name: "Skin Care", img: "skin.png" },
+    { name: "Immunity", img: "immunity.png" },
+    { name: "Hair Care", img: "hair.png" },
+  ];
 
   return (
     <div className="bg-white border border-gray-300 rounded-lg shadow-md">
@@ -9,13 +14,11 @@ const Specializations: React.FC = () => {
         <h3 className="text-lg text-gray-700">I Specialize In</h3>
       </div>
       <div className="flex space-x-4 mt-4 p-4">
-        {specialties.map((specialty) => (
-          <span
-            key={specialty}
-            className="px-3 py-2 bg-green-100 text-green-700 rounded"
-          >
-            {specialty}
-          </span>
+        {specialties.map((sp, i) => (
+          <div key={i} className="px-3 py-2  text- cen flex-col">
+            <img src={`${sp.img}`} alt={sp.name} />
+            {sp.name}
+          </div>
         ))}
       </div>
     </div>
