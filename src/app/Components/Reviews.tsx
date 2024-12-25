@@ -3,7 +3,7 @@ import React from "react";
 const Reviews: React.FC = () => {
   return (
     <div className="bg-white shadow-lg rounded-lg">
-      <div className="text-lg p-4 w-full bg-[#F4F7EC] font-medium text-gray-700">
+      <div className="text-lg p-4 w-full grad font-medium text-gray-700">
         Featured Reviews (102)
       </div>
       <div className="mt-4 space-y-4 px-4 pb-4">

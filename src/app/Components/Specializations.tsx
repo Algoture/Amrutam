@@ -10,7 +10,7 @@ const Specializations: React.FC = () => {
 
   return (
     <div className="bg-white border border-gray-300 rounded-lg shadow-md">
-      <div className="text-lg w-full p-4 bg-[#F4F7EC] flex items-center justify-between">
+      <div className="text-lg w-full p-4 grad flex items-center justify-between">
         <h3 className="text-lg text-gray-700">I Specialize In</h3>
       </div>
       <div className="flex space-x-4 mt-2 p-4">

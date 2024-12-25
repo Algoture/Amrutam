@@ -44,3 +44,6 @@ body {
 .socialDiv {
   @apply bg-[#F7F7FC] size-10 border-[0.3px] rounded-full border-[#8E8E8E] cen;
 }
+.grad{
+  @apply bg-gradient-to-r from-[#F4F7EC];
+}
