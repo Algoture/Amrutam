@@ -5,7 +5,7 @@ const Filters: React.FC = () => {
   const filters = ["Hair care", "Female", "₹0-₹500", "Hindi"];
 
   return (
-    <div className="flex flex-wrap gap-2 mt-4">
+    <div className="flex flex-wrap gap-2 mt-4 px-6">
       <div className="w-full flex items-center justify-evenly my-2">
         <select className="border rounded-md px-3 py-2 w-fit bg-[#F3F3F3]">
           <option>Expertise</option>

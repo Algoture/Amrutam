@@ -36,7 +36,7 @@ const DoctorList: React.FC = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
       {doctors.map((doctor, index) => (
         <DoctorCard key={index} {...doctor} />
       ))}
