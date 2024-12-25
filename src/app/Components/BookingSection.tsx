@@ -115,7 +115,7 @@ const BookingSection: React.FC = () => {
       </div>
 
       <button
-        className="w-full mt-6 px-4 py-2 bg-act text-white rounded text-center font-medium"
+        className={`w-full mt-6 px-4 py-2 bg-act text-white rounded text-center font-medium ${selectedSlot?"cursor-pointer":"cursor-not-allowed"}`}
         disabled={!selectedSlot}
       >
         Make an Appointment

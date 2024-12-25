@@ -14,11 +14,11 @@ const AboutMeSection = () => {
         Hello! I am Dr. Bruce Willis, a Gynaecologist in Sanjivni Hospital,
         Surat. Love to work with all my hospital staff and senior doctors.
         Completed my graduation in Gynaecologist Medicine from the...
-        <span className="text-blue-500 cursor-pointer hover:underline">
-          {" "}
-          Read More
-        </span>
       </p>
+      <div className="w-full flex justify-between underline items-center px-4 gap-2 text-nowrap">
+        <div className="bg-gray-400 w-full h-[0.5px]"></div>
+        Read More
+      </div>
       <div className="p-4">
         <div className="flex items-center gap-4  mt-2">
           <h3 className="text-sm font-semibold text-gray-700">
